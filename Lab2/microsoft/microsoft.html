@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Microsoft</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="div1">
+                <img src="micrologo.png" alt="microsoft-logo" width="108px" class="logo">
+                <ul class="products">
+                    <li>Microsoft 365</li>
+                    <li>Teams</li>
+                    <li>Copilot</li>
+                    <li>Windows</li>
+                    <li>Surface</li>
+                    <li>Xbox</li>
+                    <li>Deals</li>
+                    <li>Small</li>
+                    <li>Business</li>
+                    <li>Support</li>
+
+            
+                </ul>
+
+                <ul class="services">
+                    <li>All Microsoft</li>
+                    <li>Search</li>
+                    <li>Cart</li>
+                    <li>Sign in</li>
+                    
+                </ul>
+
+            </div>
+            <div class="div2">
+                <a href="#" class="slogan">
+                    Pay your way, with flexible payment options available at checkout. Learn more >
+                </a>
+            </div>
+            
+            <div class="slider-container">
+                <div class="slides">
+                    <div class="slide"><img src="copilot.avif" alt="Image 1"></div>
+                    <div class="slide"><img src="copilot2.avif" alt="Image 2"></div>
+                </div>
+        
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+        
+                <div class="dots">
+                    <span class="dot active" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                </div>
+            </div>
+
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Copilot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="copilot-section">
+            <h1>Copilot is your AI companion</h1>
+            <p>Always by your side, ready to support you whenever and wherever you need it.</p>
+            <button class="download-button">Download the Copilot app</button>
+        </section>
+
+        <section class="surface-deal">
+            <h2>Save up to $500 on select Surface Laptop, Copilot+ PC</h2>
+            <p>Save big on an AI-powered companion made for next-gen performance. For a limited time.</p>
+            <button class="shop-button">Shop now</button>
+        </section>
+
+        <section class="xbox-controller">
+            <h2>Reveal the mysteries within</h2>
+            <p>Get the Xbox Wireless Controller – Pulse Cipher, featuring a transparent red design, silver interior, metallic features, and more.</p>
+            <button class="preorder-button">Pre-order now</button>
+        </section>
+
+        <section class="microsoft-365">
+            <h2>Choose your Microsoft 365</h2>
+        </section>
+
+        <section class="xbox-series-s">
+            <h2>Xbox Series S</h2>
+            <p>Next-gen performance in the smallest Xbox ever.</p>
+            <button class="shop-button">Shop Xbox Series S</button>
+        </section>
+    </div>
+</body>
+</html>
+
+            <script>
+                let currentIndex = 0;
+                const slides = document.querySelector('.slides');
+                const dots = document.querySelectorAll('.dot');
+                let autoSlideInterval;
+        
+                function updateSlide(index) {
+                    slides.style.transform = `translateX(-${index * 100}%)`;
+                    dots.forEach(dot => dot.classList.remove('active'));
+                    dots[index].classList.add('active');
+                    currentIndex = index;
+                }
+        
+                function nextSlide() {
+                    currentIndex = (currentIndex + 1) % 2;
+                    updateSlide(currentIndex);
+                }
+        
+                function prevSlide() {
+                    currentIndex = (currentIndex - 1 + 2) % 2;
+                    updateSlide(currentIndex);
+                }
+        
+                function currentSlide(index) {
+                    updateSlide(index);
+                }
+        
+                function startAutoSlide() {
+                    autoSlideInterval = setInterval(nextSlide, 5000);
+                }
+        
+                function stopAutoSlide() {
+                    clearInterval(autoSlideInterval);
+                }
+        
+                document.querySelector('.slider-container').addEventListener('mouseenter', stopAutoSlide);
+                document.querySelector('.slider-container').addEventListener('mouseleave', startAutoSlide);
+        
+                startAutoSlide();
+            </script>
+              
+        </div>
+    </body>
+</html>
