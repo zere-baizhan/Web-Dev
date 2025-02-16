@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <script>
+        let user = {
+        name: "John",
+        years: 30
+        };
+
+        let {name, years: age, isAdmin = false} = user;
+
+        alert( name ); 
+        alert( age ); 
+        alert( isAdmin ); 
+
+
+        function topSalary(salaries) {
+        let maxSalary = 0;
+        let maxName = null;
+        for(const [name, salary] of Object.entries(salaries)) {
+          if (maxSalary < salary) {
+            maxSalary = salary;
+            maxName = name;
+          }
+        }
+        return maxName;
+        }
+    </script>
+        
+
+</html>

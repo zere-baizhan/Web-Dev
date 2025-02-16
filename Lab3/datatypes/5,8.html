@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <script>
+       function unique(arr) {
+        return Array.from(new Set(arr));
+}
+
+/*second*/
+function aclean(arr) {
+  let map = new Map();
+
+  for (let word of arr) {
+    // split the word by letters, sort them and join back
+    let sorted = word.toLowerCase().split('').sort().join(''); // (*)
+    map.set(sorted, word);
+  }
+
+  return Array.from(map.values());
+}
+
+let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+
+alert( aclean(arr) );
+
+/*3. bcuz map.keys() function returns an iterable,not array*/
+    </script>
+        
+
+</html>
