@@ -1,0 +1,20 @@
+<h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color:blue;text-align: center;">Welcome to WebDev shop!</h1>
+<div class="products-container">
+    <div class="product-card" *ngFor="let product of products">
+      <img [src]="product.image" [alt]="product.name" class="product-image">
+  
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.description }}</p>
+      <p>⭐ {{ product.rating }}/5</p>
+  
+     
+  
+      <a [href]="product.link" target="_blank" class="buy-button">Buy Now</a>
+  
+      <div class="share-buttons">
+        <button (click)="shareProduct(product, 'whatsapp')">Share on WhatsApp</button>
+        <button (click)="shareProduct(product, 'telegram')">Share on Telegram</button>
+      </div>
+    </div>
+  </div>
+  
