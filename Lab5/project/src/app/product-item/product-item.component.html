@@ -1,0 +1,7 @@
+<div class="product-item">
+  <img [src]="product.imageUrl" width="100" alt="{{ product.name }}">
+  <h3>{{ product.name }}</h3>
+  <p>{{ product.description }}</p>
+  <button (click)="likeProduct()">❤️ Like {{ product.likes }}</button>
+  <button (click)="removeProduct()">🗑️ Remove</button>
+</div>
