@@ -1,0 +1,17 @@
+.btn-details {
+  margin: 20px 0 10px 45px;
+}
+
+.container-photo-inner {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.container-photo-inner li {
+  list-style: none;
+}
+
+.container-photo-inner li img {
+  width: 300px;
+}

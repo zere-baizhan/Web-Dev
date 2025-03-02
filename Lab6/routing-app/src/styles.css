@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: 'Arial', sans-serif;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+}
+
+.success {
+  background-color: #5cb85c;
+  margin-left: 10px;
+}
+
+.info {
+  background-color: #5bc0de;
+}

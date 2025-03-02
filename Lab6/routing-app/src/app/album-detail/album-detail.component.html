@@ -1,0 +1,16 @@
+<div *ngIf="loaded" class="container">
+  <div *ngIf="album">
+    <h3>Album Detail #{{album.id}}</h3>
+    <input [(ngModel)]="album.title">
+    <button class="btn success" type="button" (click)="updateTitle(album!)">Save</button>
+    <p *ngIf="saving">Updates are saving...</p>
+  </div>
+
+  <a routerLink="photos">Photos</a>
+
+  <div>
+    <button class="btn info" type="button" (click)="goBack()">Go Back</button>
+  </div>
+</div>
+
+<div *ngIf="!loaded">Data is loading...</div>

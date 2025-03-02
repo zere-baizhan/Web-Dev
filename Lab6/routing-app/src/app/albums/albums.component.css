@@ -1,0 +1,47 @@
+fieldset input {
+  padding: 8px;
+  width: 500px;
+}
+
+fieldset button {
+  padding: 10px;
+  background-color: #0275d8;
+  border: none;
+  border-radius: 3px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.inner-container {
+  margin: 0;
+  padding: 0;
+  width: 800px;
+}
+
+.inner-element {
+  margin: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-element a {
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.inner-element a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+.inner-element button {
+  margin-left: 10px;
+  padding: 5px;
+  background-color: rgb(237, 82, 73);
+  border: 2px solid rgb(201, 29, 18);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
