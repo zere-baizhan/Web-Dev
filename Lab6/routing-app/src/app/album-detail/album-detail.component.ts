@@ -38,6 +38,8 @@ export class AlbumDetailComponent implements OnInit {
     });
   }
 
+  
+
   updateTitle(album: Album) {
     this.saving = true;
     this.albumsService.updateAlbum(album).subscribe((updated) => {
@@ -45,6 +47,7 @@ export class AlbumDetailComponent implements OnInit {
       this.saving = false;
     });
   }
+
 
   goBack() {
     this.location.back();

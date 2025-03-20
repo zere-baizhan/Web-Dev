@@ -61,5 +61,8 @@ export class AppComponent {
   selectCategory(category: any) {
     this.selectedCategory = category;
   }
+
+
+ 
   
 }

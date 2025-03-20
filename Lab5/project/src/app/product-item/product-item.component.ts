@@ -19,8 +19,8 @@ export class ProductItemComponent {
   @Input() product!: Product;
   @Output() remove = new EventEmitter<number>();
 
-  likeProduct() {
-    this.product.likes++;
+  toggleLike() {
+    this.product.likes = this.product.likes === 0 ? 1 : 0;
   }
 
   removeProduct() {
